@@ -1,4 +1,4 @@
-package cn.hupoguang.confessionswall.activity;
+﻿package cn.hupoguang.confessionswall.activity;
 
 import com.umeng.analytics.MobclickAgent;
 
@@ -14,7 +14,7 @@ import cn.hupoguang.confessionswall.R;
 /**
  * 关于页面
  * 
- * @author wang
+ * @author   wang
  * 
  */
 public class AboutActivity extends Activity implements OnClickListener {
