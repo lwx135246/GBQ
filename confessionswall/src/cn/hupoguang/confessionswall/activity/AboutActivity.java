@@ -14,7 +14,7 @@ import cn.hupoguang.confessionswall.R;
 /**
  * 关于页面
  * 
- * @author   wang
+ * @author   wanglwx
  * 
  */
 public class AboutActivity extends Activity implements OnClickListener {
