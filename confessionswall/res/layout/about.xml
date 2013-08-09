@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:background="#00b7ee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:text="关于我们" />
+        <ImageView
+            android:id="@+id/backtohome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/backtomain" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/we_product"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/we" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="我 们 的 产 品"
+                android:textColor="@color/defaultFont"
+                android:textSize="@dimen/eighteen_num" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/product_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:padding="15dp"
+            android:text="你有一段话,我有一幅画\n把这美丽一天轻轻地留下\n让时间永久保留着我们的告白墙\n轻松说出真心话
+"
+            android:textColor="@color/defaultFont"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/custom_face"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/chuizi" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="定 制 你 的 画 面"
+                android:textColor="@color/defaultFont"
+                android:textSize="@dimen/eighteen_num" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/custom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:padding="15dp"
+            android:text="也许未来某一天对你有特殊的意义\n把1.图片 2.日期 3.署名 \n发送到service@gaobaiqiang.com\n我们审核通过并简单处理后\n那一天就会是你独一无二的画面"
+            android:textColor="@color/defaultFont"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/feed_back"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/feedback" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="反 馈"
+                android:textColor="@color/defaultFont"
+                android:textSize="@dimen/eighteen_num" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:padding="15dp"
+            android:text="在微信里搜公共账号gaobaiqiang添加关注即可
+\n如需反馈建议请直接留言\n账号有很多不错的告白小功能哦"
+            android:textColor="@color/defaultFont"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="orange">#ffff740f</color>
+    <color name="yellow">#ffe87215</color>
+    <color name="red">#ffff0000</color>
+    <color name="gray">#ff7d7d7d</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="darkgray">#ff808080</color>
+    <color name="fontblack">#ff4b4b4b</color>
+    
+    <color name="text_color">#ffffffff</color>
+    <color name="text_red">#ffff0000</color>
+    <color name="address_text">#808080</color>
+    <color name="like_blue">#0000ff</color>
+    <color name="like_light_blue">#6699ff</color>
+    <color name="gray_background">#cccccc</color>
+    <color name="dark_gray">#666666</color>
+    <color name="black_text">#000000</color>
+    
+    <color name="transparent_background">#00000000</color>
+    <color name="half_alpha">#55000000</color>
+    <color name="defaultFont">#ff393939</color>
+    <color name="defaultBg">#ffF5F5F5</color>
+    <color name="publish_font_hint">#c6c6c6</color>
+    <color name="fontBlue">#00b7ee</color>
+    
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publish_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="100"
+    android:background="@color/defaultBg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="#00b7ee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/send_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/publish_onfession"
+            android:src="@drawable/fasong1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:text="写告白" />
+
+        <ImageView
+            android:id="@+id/imgBackToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/backtomain" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="To:"
+                android:textColor="@color/fontBlue"
+                android:textSize="@dimen/twenty_two_num" />
+
+            <EditText
+                android:id="@+id/to_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textline"
+                
+                android:gravity="center"
+                android:hint="@string/toname_hint"
+                android:singleLine="true"
+                android:textColor="@color/defaultFont"
+                android:textColorHint="@color/publish_font_hint"
+                android:textSize="@dimen/eighteen_num" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="From:"
+                android:textColor="@color/fontBlue"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/from_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textline"
+                android:gravity="center"
+                android:textColor="@color/defaultFont"
+                android:hint="@string/fromname_hint"
+                android:singleLine="true"
+                android:textColorHint="@color/publish_font_hint"
+                android:textSize="@dimen/eighteen_num" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/content_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-12dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="请输入内容..."
+                android:maxLength="140"
+                android:maxLines="8"
+                android:minLines="1"
+                android:paddingBottom="5dp"
+                android:textColor="@color/defaultFont"
+                android:paddingLeft="12dp"
+                android:textSize="@dimen/eighteen_num" >
+                
+            </EditText>
+           
+            <View android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/defaultFont"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/leave_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="140"
+                android:textColor="@color/defaultFont" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="@dimen/twelve_num"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/total_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:visibility="gone"
+                android:textColor="@color/red"
+                android:textSize="@dimen/fourteen_num" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

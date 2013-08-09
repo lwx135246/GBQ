@@ -1,0 +1,12 @@
+<resources>
+
+    <!--补充性内容 -->
+    <dimen name="twelve_num">12sp</dimen>
+    <!--次级正文 -->
+    <dimen name="fourteen_num">14sp</dimen>
+    <!--正文 -->
+    <dimen name="eighteen_num">18sp</dimen>
+    <!--标题 -->
+    <dimen name="twenty_two_num">22sp</dimen>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="790">
+        
+        <ImageView 
+            android:id="@+id/home_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/home"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/half_alpha"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/to_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TO:我的女神"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_num" />
+
+                <TextView
+                    android:id="@+id/from_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="from:爱你的郎"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen_num" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="1dip"
+                    android:layout_height="30dp"
+                    android:background="#FFD0D0D0"
+                    android:orientation="vertical" />
+
+                <ImageView
+                    android:id="@+id/praise_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/hand" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen_num" />
+
+                <TextView
+                    android:id="@+id/praise_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="96"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_num" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/context_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="490">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="我一定是在不知不觉中爱上你的，尽管我对爱的定义已经趋向不明，但是我想我的确是爱上你了。我信任自己的直觉，你是我的唯一，永远的唯一。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighteen_num" />
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

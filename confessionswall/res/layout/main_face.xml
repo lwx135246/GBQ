@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/theme_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="790"
+            android:background="@drawable/defalutimage" >
+
+            <LinearLayout
+                android:id="@+id/middle_sentence_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/half_alpha"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/sentence_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="大 胆 告 白 ， 努 力 去 爱  !"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/english_sentence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="BOLD confession hard to LOVE"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+                <!-- 帮助查看时间的 -->
+
+                <TextView
+                    android:id="@+id/dateHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013-08-01"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/middle_setence_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/half_alpha"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="To:"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/from_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="我爱的人"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="from:"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/to_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="爱我的人"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:typeface="monospace" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="34dp"
+                android:layout_marginTop="34dp"
+                android:src="@drawable/about" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="490" >
+
+            <RelativeLayout
+                android:id="@+id/calendar_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cba"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/main_date_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cba"
+                android:visibility="visible" >
+
+                <include layout="@layout/main_date" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gb_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cba"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gb_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="I like you, has been concerned about you before, I hate you, but now in llke with you.
+ Very strange, right? However, I want to say: &apos;I love you!&apos; Maybe I&apos;m overconfident now! I am good enough for you, but I would like to put my heart would tell you, I like you! "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_num" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gb_next_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cba"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gb_next_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="所谓深情挚爱,就是你心中有我,我心中有你,原来,一个人吃饭没有两个人吃饭开心。"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_num" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 隐藏页 -->
+
+    <RelativeLayout
+        android:id="@+id/nullPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/defaultBg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:text="有爱就有明天" />
+    </RelativeLayout>
+
+</RelativeLayout>
